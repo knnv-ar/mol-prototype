@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>MO-L - Municipio On Line</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript">
+<!--
+function MM_findObj(n, d) { //v3.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document); return x;
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function MM_showHideLayers() { //v3.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) if ((obj=MM_findObj(args[i]))!=null) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+//-->
+</script>
+</head>
+
+<body bgcolor="#FFFFFF" onLoad="MM_preloadImages('sta_cruz/img/buttons/muni_new02.gif','sta_cruz/img/buttons/info_new02.gif','sta_cruz/img/buttons/comu_new02.gif')">
+<div id="mol" style="position:absolute; left:60px; top:29px; width:438; height:153; z-index:1"><img src="sta_cruz/img/mol_new01.gif" width="638" height="319"></div>
+<div id="Layer1" style="position:absolute; width:134; height:28; z-index:2; left: 123px; top: 275px"><a href="municipios.htm" onMouseOut="MM_swapImgRestore();MM_showHideLayers('muni','','hide')" onMouseOver="MM_swapImage('Image2','','sta_cruz/img/buttons/muni_new02.gif',1);MM_showHideLayers('muni','','show')"><img name="Image2" border="0" src="sta_cruz/img/buttons/muni_new.gif" width="134" height="28"></a></div>
+<div id="Layer2" style="position:absolute; width:134; height:28; z-index:3; left: 324px; top: 275px"><a href="info.htm" onMouseOut="MM_swapImgRestore();MM_showHideLayers('info','','hide')" onMouseOver="MM_swapImage('Image3','','sta_cruz/img/buttons/info_new02.gif',1);MM_showHideLayers('info','','show')"><img name="Image3" border="0" src="sta_cruz/img/buttons/info_new.gif" width="134" height="28"></a></div>
+<div id="Layer3" style="position:absolute; width:134; height:28; z-index:4; left: 527px; top: 275px"><a href="comunidad.htm" onMouseOut="MM_swapImgRestore();MM_showHideLayers('comu','','hide')" onMouseOver="MM_swapImage('Image4','','sta_cruz/img/buttons/comu_new02.gif',1);MM_showHideLayers('comu','','show')"><img name="Image4" border="0" src="sta_cruz/img/buttons/comu_new.gif" width="134" height="28"></a></div>
+<div id="pie" style="position:absolute; left:68px; top:358px; width:625px; height:42px; z-index:5"> 
+  <p align="center"><font face="Arial, Helvetica, sans-serif"><b><font size="2">Los 
+    sitios desarrollados por MO-L pueden ser vistos con cualquier navegador versi&oacute;n 
+    3 o superior. MO-L no necesita tecnolog&iacute;a adicional.<br>
+    Copyright &copy; 2000 MO-L. Todos los derechos reservados - <a href="mailto:mol@mol.com.ar">Cont&aacute;ctenos</a></font></b></font></p>
+</div>
+<div id="muni" style="position:absolute; left:68px; top:319px; width:412; height:22; z-index:6; visibility: hidden"> 
+  <p><font face="Verdana, Arial, Helvetica, sans-serif"><b><font size="-1">Acceso 
+    a los municipios presentes en MO-L.</font></b></font></p>
+</div>
+<div id="info" style="position:absolute; left:68px; top:319px; width:412px; height:22px; z-index:7; visibility: hidden"> 
+  <b><font face="Verdana, Arial, Helvetica, sans-serif" size="-1">Información 
+  general sobre los municipios argentinos.</font></b></div>
+<div id="comu" style="position:absolute; left:68px; top:319px; width:412; height:22; z-index:8; visibility: hidden"><font face="Verdana, Arial, Helvetica, sans-serif" size="-1"><b>El 
+  lugar de las organizaciones comunitarias.</b></font></div>
+</body>
+</html>
